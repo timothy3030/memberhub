@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>Add Member</h2>
+
+<form action="/save_member" method="POST">
+
+<div class="mb-3">
+<label class="form-label">Name</label>
+<input type="text" class="form-control" name="name">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input type="email" class="form-control" name="email">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Phone</label>
+<input type="text" class="form-control" name="phone">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Membership Type</label>
+<input type="text" class="form-control" name="membership_type">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Join Date</label>
+<input type="date" class="form-control" name="join_date">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Expiry Date</label>
+<input type="date" class="form-control" name="expiry_date">
+</div>
+
+<button type="submit" class="btn btn-success">Add Member</button>
+
+<a href="/dashboard" class="btn btn-secondary">Back</a>
+
+</form>
+
+{% endblock %}
+
+</div>
+
+</body>
+</html>
